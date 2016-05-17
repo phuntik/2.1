@@ -12,7 +12,7 @@ void main()
 		B* r;
 	};
 
-	B *h, *p, *t, g[50];
+	B *h, *p, *t, g[50], *s3, *s4;
 	
 	//exercise 1
 	for (int i = 0;i < 50;i++)
@@ -48,7 +48,8 @@ void main()
 	}
 
 	//exercise 3
-	p = new B[100];
+	s3 = new B[100];
+	p = s3;
 	for (int i = 0;i < 100;i++)
 	{
 		p->xt = new A;
@@ -69,7 +70,8 @@ void main()
 	}
 
 	//exercise 4
-	t = new B[100];
+	s4 = new B[100];
+	t = s4;
 	for (int i = 0;i < 100;i++)
 	{
 		t->xt = new A;
