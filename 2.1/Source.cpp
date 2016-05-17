@@ -75,7 +75,7 @@ void main()
 		t->xt = new A;
 		for (int j = 0;j < 10;j++)
 		{
-			p->xt->xp[j] = new int(1);
+			t->xt->xp[j] = new int(1);
 		}
 		if (i != 99)
 		{
