@@ -72,19 +72,19 @@ void main()
 	t = new B[100];
 	for (int i = 0;i < 100;i++)
 	{
-		p->xt = new A;
+		t->xt = new A;
 		for (int j = 0;j < 10;j++)
 		{
 			p->xt->xp[j] = new int(1);
 		}
 		if (i != 99)
 		{
-			p->r = new B;
-			p = p->r;
+			t->r = new B;
+			t = t->r;
 		}
 		else
 		{
-			p->r = 0;
+			t->r = 0;
 		}
 	}
 }
