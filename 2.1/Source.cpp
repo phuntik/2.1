@@ -12,7 +12,7 @@ void main()
 		B* r;
 	};
 
-	B *h, *p, *t, g[50], *s3, *s4;
+	B *h, *p, *t, g[50], *s3, *s4, *t3, *t4;
 	
 	//exercise 1
 	for (int i = 0;i < 50;i++)
@@ -48,7 +48,7 @@ void main()
 	}
 
 	//exercise 3
-	s3 = new B[100];
+	s3 = new B;
 	p = s3;
 	for (int i = 0;i < 100;i++)
 	{
@@ -60,8 +60,9 @@ void main()
 		}
 		if (i != 99)
 		{
-			p->r = new B;
-			p = p->r;
+			t3 = new B;
+			p->r = t3;
+			p = t3;
 		}
 		else
 		{
@@ -70,7 +71,7 @@ void main()
 	}
 
 	//exercise 4
-	s4 = new B[100];
+	s4 = new B;
 	t = s4;
 	for (int i = 0;i < 100;i++)
 	{
@@ -81,8 +82,9 @@ void main()
 		}
 		if (i != 99)
 		{
-			t->r = new B;
-			t = t->r;
+			t4 = new B;
+			p->r = t4;
+			p = t3;
 		}
 		else
 		{
